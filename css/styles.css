@@ -1,0 +1,11 @@
+/* Barber shop CSS file */
+/* main styles */
+:root {
+  --title-color: #303030;
+  --white-color: #ffffff;
+  --main-text-color: #555555;
+  --alt-text-color: #9da4bd;
+}
+p {
+  color: var(--main-text-color);
+}
