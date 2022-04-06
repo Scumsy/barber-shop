@@ -18,11 +18,11 @@ a {
 .nav-list {
   list-style: none;
 }
-.nav-list-item {
+.nav-item {
   color: var(--white-color);
 }
-.nav-list-item:hover,
-.nav-list-item:focus {
+.nav-item:hover,
+.nav-item:focus {
   color: #ff6c00;
 }
 .nav-btn:hover,
@@ -30,3 +30,9 @@ a {
   background-color: #ff6c00;
 }
 /* Main section styles */
+.hero-social {
+  list-style: none;
+}
+.hero-social:hover {
+  color: #ff6c00;
+}
