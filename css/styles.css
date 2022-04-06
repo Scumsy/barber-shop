@@ -6,6 +6,27 @@
   --main-text-color: #555555;
   --alt-text-color: #9da4bd;
 }
-p {
-  color: var(--main-text-color);
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: grey;
 }
+a {
+  text-decoration: none;
+}
+
+/* Header styles */
+.nav-list {
+  list-style: none;
+}
+.nav-list-item {
+  color: var(--white-color);
+}
+.nav-list-item:hover,
+.nav-list-item:focus {
+  color: #ff6c00;
+}
+.nav-btn:hover,
+.nav-btn:focus {
+  background-color: #ff6c00;
+}
+/* Main section styles */
