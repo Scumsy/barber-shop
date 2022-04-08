@@ -25,6 +25,9 @@ a {
 .nav-item:focus {
   color: #ff6c00;
 }
+.nav-btn {
+  text-transform: uppercase;
+}
 .nav-btn:hover,
 .nav-btn:focus {
   background-color: #ff6c00;
