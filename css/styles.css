@@ -9,13 +9,14 @@
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: grey;
+  
 }
 a {
   text-decoration: none;
 }
 
 /* Header styles */
-.nav-list {
+.list {
   list-style: none;
 }
 .nav-item {
@@ -34,7 +35,7 @@ a {
 }
 /* Main section styles */
 .hero-social {
-  list-style: none;
+  color: var(--title-color);
 }
 .hero-social:hover {
   color: #ff6c00;
