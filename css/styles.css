@@ -5,14 +5,21 @@
   --white-color: #ffffff;
   --main-text-color: #555555;
   --alt-text-color: #9da4bd;
+  --subtitle-color: rgba(157, 164, 189, 0.6);
+  --hover-color: #ff6c00;
 }
 body {
   font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.02em;
   background-color: grey;
-  
 }
-a {
+.link {
   text-decoration: none;
+  font-style: normal;
 }
 
 /* Header styles */
@@ -20,23 +27,151 @@ a {
   list-style: none;
 }
 .nav-item {
+  
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3px;
+  letter-spacing: 0.1em;
   color: var(--white-color);
 }
 .nav-item:hover,
 .nav-item:focus {
-  color: #ff6c00;
+  color: var(--hover-color);
 }
-.nav-btn {
+.tel {
   text-transform: uppercase;
 }
-.nav-btn:hover,
-.nav-btn:focus {
-  background-color: #ff6c00;
+.btn {
+  font-family: 'Open sans', sans-serif;
+  text-transform: uppercase;
+  border: 1px solid var(--hover-color);
+  box-sizing: border-box;
+  border-radius: 25px;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3px;
+  letter-spacing: 0.1em;
+  color: var(--white-color);
+  padding: 12px 20px;
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--hover-color);
 }
 /* Main section styles */
+/* Hero section styles */
 .hero-social {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4px;
   color: var(--title-color);
 }
 .hero-social:hover {
-  color: #ff6c00;
+  color: var(--hover-color);
+}
+.subtitle{
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--title-color)
+}
+.sub-hero {
+  color: var(--subtitle-color);
+}
+.title {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  color: var(--title-color);
+}
+.main-title {
+  font-size: 72px;
+  color: var(--white-color);
+}
+.main-text {
+  color: var(--alt-text-color);
+}
+/* About us section styles */
+.sub-color {
+  color: var(--title-color);
+}
+.about-us-text{
+  color: var(--main-text-color);
+}
+.about-us-subtext {
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--main-text-color);
+}
+.btn-about-us {
+  color: var(--title-color);
+}
+/* Pricing section styles */
+.pricing-title {
+  color: var(--white-color);
+}
+.pricing-list {
+  color: var(--alt-text-color);
+}
+/* Why we section styles */
+.why-we-numbers {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  color: var(--title-color);
+}
+.why-we-text {
+  color: var(--main-text-color);
+}
+/* Masters section styles */
+.masters-name {
+  line-height: 1.4;
+  color: var(--main-text-color);
+}
+.masters-prof {
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--hover-color);
+}
+/* Gallery section styles */
+/* Online form section styles */
+.online-title {
+  color: var(--white-color);
+}
+/* contacts section styles */
+.contacts-title {
+  color: var(--white-color);
+}
+.link-contacts {
+  color: var(--alt-text-color);
+}
+.link-contacts:hover,
+.link-contacts:focus {
+  color: var(--white-color);
+}
+.work-time-title {
+  color: var(--white-color);
+}
+.work-time {
+  color: var(--alt-text-color);
+}
+/* Footer styles */
+.footer-social-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4px;
+  color: var(--title-color);
+}
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4px;
+  color: var(--alt-text-color) ;
 }
