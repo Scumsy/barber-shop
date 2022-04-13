@@ -7,6 +7,7 @@
   --alt-text-color: #9da4bd;
   --subtitle-color: rgba(157, 164, 189, 0.6);
   --hover-color: #ff6c00;
+  --typical-mb: 20px;
 }
 body {
   font-family: 'Open Sans', sans-serif;
@@ -15,19 +16,43 @@ body {
   font-size: 18px;
   line-height: 1.66;
   letter-spacing: 0.02em;
-  background-color: grey;
+}
+p, h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+ul, ol {
+  margin-left: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+button {
+  cursor: pointer;
 }
 .link {
   text-decoration: none;
   font-style: normal;
 }
-
-/* Header styles */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 1px solid tomato;
+}
 .list {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* Header styles */
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: darkgray;
 }
 .nav-item {
-  
   font-weight: 600;
   font-size: 12px;
   line-height: 1.3px;
@@ -61,6 +86,9 @@ body {
 }
 /* Main section styles */
 /* Hero section styles */
+.hero {
+  background-color: grey;
+}
 .hero-social {
   font-family: 'Open Sans';
   font-weight: 600;
@@ -71,6 +99,10 @@ body {
 .hero-social:hover {
   color: var(--hover-color);
 }
+.hero-content {
+  padding: 272px 0 206px 96px;
+  background-color: #000;
+}
 .subtitle{
   font-weight: 600;
   font-size: 11px;
@@ -80,6 +112,7 @@ body {
   color: var(--title-color)
 }
 .sub-hero {
+  margin-bottom: var(--typical-mb);
   color: var(--subtitle-color);
 }
 .title {
@@ -91,20 +124,32 @@ body {
   color: var(--title-color);
 }
 .main-title {
+  margin-bottom: var(--typical-mb);
   font-size: 72px;
   color: var(--white-color);
 }
 .main-text {
+  max-width: 400px;
   color: var(--alt-text-color);
 }
 /* About us section styles */
+.about-us {
+  padding-top: 139px;
+  padding-bottom: 121px;
+}
 .sub-color {
+  margin-bottom: var(--typical-mb);
   color: var(--title-color);
 }
+.about-us-title {
+  margin-bottom: var(--typical-mb);
+}
 .about-us-text{
+  margin-bottom: var(--typical-mb);
   color: var(--main-text-color);
 }
 .about-us-subtext {
+  margin-bottom: 40px;
   font-size: 14px;
   line-height: 1.9;
   color: var(--main-text-color);
@@ -113,14 +158,39 @@ body {
   color: var(--title-color);
 }
 /* Pricing section styles */
+.pricing {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-color: ;
+}
+.pricing-sub {
+  margin-bottom: var(--typical-mb);
+}
 .pricing-title {
+  margin-bottom: 44px;
   color: var(--white-color);
 }
 .pricing-list {
+  padding: 30px 40px;
   color: var(--alt-text-color);
 }
+.pricing-list-item {
+  margin-bottom: var(--typical-mb);
+}
 /* Why we section styles */
+.why-we {
+  padding-top: 121px;
+  padding-bottom: 130px;
+}
+.why-we-item {
+  width: 170px;
+  height: 133px;
+  background-color: #f7f7f7
+}
 .why-we-numbers {
+  display: block;
+  text-align: center;
+  margin-bottom: 6px;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.4;
@@ -130,8 +200,28 @@ body {
 .why-we-text {
   color: var(--main-text-color);
 }
+.sub-why-we {
+  padding-bottom: var(--typical-mb);
+}
+.why-we-tittle {
+  padding-bottom: var(--typical-mb);
+}
 /* Masters section styles */
+.masters {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+.sub-masters {
+  margin-bottom: var(--typical-mb);
+}
+.masters-title {
+  margin-bottom: 44px;
+}
+.masters-img {
+  margin-bottom: 30px;
+}
 .masters-name {
+  margin-bottom: 8px;
   line-height: 1.4;
   color: var(--main-text-color);
 }
@@ -141,7 +231,21 @@ body {
   color: var(--hover-color);
 }
 /* Gallery section styles */
+.gallery {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+.gallery-title {
+  display: none;
+}
+.sub-gallery {
+  margin-bottom: 44px;
+}
 /* Online form section styles */
+.online-form {
+  padding-top: ;
+  padding-bottom: ;
+}
 .online-title {
   color: var(--white-color);
 }
