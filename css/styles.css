@@ -296,6 +296,8 @@ button {
   padding-top: 130px;
   padding-bottom: 130px;
   background-color: #f7f7f7;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 .sub-masters {
   margin-bottom: var(--typical-mb);
@@ -324,7 +326,6 @@ button {
   line-height: 1.4;
   text-align: center;
   color: var(--hover-color);
-  margin-bottom: 30px;
 }
 .masters-soc-list {
   display: flex;
@@ -332,17 +333,37 @@ button {
 }
 .masters-info {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 .masters-soc-link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: var(--white-color);
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* fill: var(--title-color); */
+}
+.masters-soc-link:hover,
+.masters-soc-link:focus {
+  background-color: var(--title-color);
+  /* fill: var(--hover-color); */
 }
 .masters-soc-item:not(:last-child) {
   margin-right: 10px;
 }
+
+.masters-soc-link:hover,
+.masters-soc-link:focus {
+  background-color: var(--title-color);
+}
+.masters-soc-link:hover .masters-soc-icon,
+.masters-soc-link:focus .masters-soc-icon {
+  background-color: var(--title-color);
+  fill: var(--hover-color);
+}
+
 /* Gallery section styles */
 .gallery {
   padding-top: 130px;
