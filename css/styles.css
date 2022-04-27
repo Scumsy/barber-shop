@@ -112,10 +112,12 @@ button {
   padding: 12px 20px;
   min-width: 160px;
   height: 38px;
+  transition: transform 500ms linear 10ms;
 }
 .btn:hover,
 .btn:focus {
   background-color: var(--hover-color);
+  transform: scale(1.1);
 }
 /* Main section styles */
 /* Hero section styles */
@@ -390,11 +392,16 @@ button {
   justify-content: center;
   align-items: center;
   fill: var(--title-color);
+  transition-property: transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 50ms;
 }
 .masters-soc-link:hover,
 .masters-soc-link:focus {
   /* background-color: var(--title-color); */
   fill: var(--hover-color);
+  transform: scale(1.2);
 }
 .masters-soc-item:not(:last-child) {
   margin-right: 10px;
