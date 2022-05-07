@@ -486,6 +486,24 @@ button {
 }
 .online-title {
   color: var(--white-color);
+  margin-bottom: 44px;
+}
+.online-form-field {
+  resize: none;
+
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  outline: none;
+}
+.online-form-field:hover,
+.online-form-field:focus {
+  border-color: var(--white-color);
+  color: var(--white-color);
+}
+.online-form-field:hover::placeholder,
+.online-form-field:focus::placeholder {
+  color: var(--white-color);
 }
 /* contacts section styles */
 .contacts {
