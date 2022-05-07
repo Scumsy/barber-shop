@@ -385,34 +385,41 @@
       </section>
       <div class="online-wrap">
         <div class="container">
-          <section class="online-form">
+          <section class="online">
             <h2 class="title online-title">Онлайн-запись</h2>
-            <form>
-              <label>
-                <input
-                  type="name"
-                  placeholder="Имя"
-                  autofocus
-                  required
-                  class="online-form-field"
-                />
-              </label>
-              <label class="online-form-field">
-                <input
-                  type="tel"
-                  placeholder="Телефон"
-                  required
-                  autocomplete="tel"
-                  class="online-form-field"
-                />
-              </label>
-
-              <textarea
-                name="message"
-                placeholder="Сообщение"
-                autofocus
-                class="online-form-field"
-              ></textarea>
+            <form class="online-form">
+              <div class="name-tel-wrap">
+                <div class="online-field">
+                  <input
+                    type="text"
+                    class="online-input"
+                    name="online-name"
+                    id="online-name"
+                    placeholder=" "
+                  />
+                  <label class="online-label" for="online-name">Имя*</label>
+                </div>
+                <div class="online-field">
+                  <input
+                    type="tel"
+                    class="online-input"
+                    name="online-tel"
+                    id="online-tel"
+                    placeholder=" "
+                  />
+                  <label class="online-label" for="online-tel">Телефон*</label>
+                </div>
+              </div>
+              <div class="online-text-field">
+                <textarea
+                  name="online-mess"
+                  id="online-mess"
+                  class="online-mess"
+                ></textarea>
+                <label for="online-mess" class="online-mess-label"
+                  >Сообщение</label
+                >
+              </div>
             </form>
             <button class="btn" type="button">Отправить</button>
           </section>
